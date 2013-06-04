@@ -21,8 +21,3 @@ tested_apps = ("hatband_support", "hatband", )
 full_name = "armstrong.hatband"
 pip_install_first = True
 
-
-@task
-def update_visualsearch():
-    local("cp -R ./vendor/visualsearch/build-min/* ./armstrong/hatband/static/visualsearch/")
-    local("cp ./vendor/visualsearch/lib/images/embed/icons/* ./armstrong/hatband/static/images/embed/icons/")
